@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="fifth2.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+        <nav>
+            <a href="#" id="show-form">Add Recipe</a>
+            <a href="#" id="show-search">Search Recipes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipe-list">
+            <h2 id="h">Recipes</h2>
+            <div id="recipes"></div>
+        </section>
+
+        <section id="add-recipe-form" class="hidden">
+            <h2>Add New Recipe</h2>
+            <form id="recipe-form">
+                <label for="name">Recipe Name:</label>
+                <input type="text" id="name" required>
+                <label for="image">Image URL:</label>
+                <input type="text" id="image" required>
+                <label for="ingredients">Ingredients (comma separated):</label>
+                <textarea id="ingredients" required></textarea>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" required></textarea>
+                <label for="para">Recipe:</label>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+
+        <section id="search-recipes" class="hidden">
+            <h2>Search Recipes</h2>
+            <input type="text" id="search" placeholder="Search by name or ingredients">
+        </section>
+    </main>
+
+    <script src="fifth2.js"></script>
+</body>
+</html>
